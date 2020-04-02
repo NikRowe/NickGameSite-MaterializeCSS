@@ -1,0 +1,15 @@
+.KaiserText {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.KaiserBlue {
+    background-color:  #0078A9;
+}
+.Kaiser-Text {
+    color: #0078A9;
+}
+
+.KaiserImg {
+    margin: 5px;
+}

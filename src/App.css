@@ -1,0 +1,24 @@
+:root {
+    --KaiserBlue: #0078A9;
+}
+
+html{
+    background-color: var(--KaiserBlue);
+}
+
+.p1-pt3 {
+    padding: .1rem;
+    padding-top: .3rem;
+}
+
+.KaiserBg {
+    background-color: var(--KaiserBlue);
+}
+
+.KaiserText {
+    color: var(--KaiserBlue);
+}
+
+.main {
+    color: white;
+}
