@@ -4,6 +4,7 @@
 
 html{
     background-color: var(--KaiserBlue);
+    font-family: Helvetica;
 }
 
 .p1-pt3 {
@@ -21,4 +22,16 @@ html{
 
 .main {
     color: white;
+}
+
+/* Button:hover {
+    background-color: white;
+    color: var(--KaiserBlue);
+    border: solid, 5px, var(--KaiserBlue);
+
+} */
+
+.inventoryItemText {
+    font-weight: bold;
+    font-size: xx-large;
 }
