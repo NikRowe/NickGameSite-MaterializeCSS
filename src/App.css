@@ -35,3 +35,27 @@ html{
     font-weight: bold;
     font-size: xx-large;
 }
+
+.btnH {
+    
+    border: solid 2px var(--KaiserBlue);
+}
+
+.btnH:hover {
+    color: var(--KaiserBlue);
+    background-color: white;
+    border: solid 2px var(--KaiserBlue);
+}
+
+.TextInput:focus {
+    background-color: var(--KaiserBlue)
+}
+
+.center {
+    display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

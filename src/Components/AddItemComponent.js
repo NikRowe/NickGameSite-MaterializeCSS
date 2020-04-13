@@ -1,9 +1,9 @@
 import React from "react";
 
-const AddItems = () => (
+const AddItem = () => (
   <div>
-    <h1> Add Items</h1>
+    <h1> Add Item</h1>
   </div>
 )
 
-export default AddItems;
+export default AddItem;

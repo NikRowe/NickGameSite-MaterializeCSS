@@ -22,7 +22,7 @@ class Navbar extends Component {
                         {/* Full Words Logo */}
                         <a href="/" className="brand-logo center hide-on-med-and-down KaiserText "><span className="KaiserText "> Kaiser Permanente </span></a>
                         {/* Sidenav toggle */}
-                        <a data-target="Main-Menu" className="KaiserText sidenav-trigger right show-on-medium-and-up">
+                        <a href="!#" data-target="Main-Menu" className="KaiserText sidenav-trigger right show-on-medium-and-up">
                             <i className="material-icons">menu</i>
                         </a>
                         {/* Logo Img jumps to center on <= Tablet */}
@@ -37,9 +37,9 @@ class Navbar extends Component {
                     {/* Sidenav Display */}
                     <div className="right">
                         <ul className="sidenav right" id="Main-Menu">
-                            <li><Link to="/"><i className=" material-icons left">people</i>Items</Link></li>
-                            <li><Link to="/items-add"><i className="material-icons left">add_box</i>Add Item</Link></li>
-                            <li><Link to="/items-remove"><i className="material-icons left">add_box</i>Remove Item</Link></li>
+                            <li><Link to="/"><i className=" material-icons left">view_list</i>Items</Link></li>
+                            <li><Link to="/about"><i className="material-icons left">info</i>About</Link></li>
+                            <li><Link to="/covid-guide"><i className="material-icons left">help</i>Quick Guide</Link></li>
                         </ul>
                     </div>
                 </nav>

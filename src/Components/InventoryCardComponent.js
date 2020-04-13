@@ -32,6 +32,7 @@ const InventoryCard = ({ item, updateInventoryItemValue }) => {
               marginRight: '5px'
             }}
             waves="light"
+            className="KaiserBg btnH"
             onClick={updateInventoryItemValue(item.id, "increment")}
           >
             Add Item
@@ -42,6 +43,7 @@ const InventoryCard = ({ item, updateInventoryItemValue }) => {
           <Button
             node="button"
             waves="light"
+            className="KaiserBg btnH"
             onClick={updateInventoryItemValue(item.id, "decrement")}
           >
             Remove Item
@@ -52,14 +54,24 @@ const InventoryCard = ({ item, updateInventoryItemValue }) => {
         </>
       ]}
       header={<CardTitle image={item.image} />}
-      title={<span >{item.name} {item.totalAmount}</span>}
+      title={
+        <>
+          <span className="inventoryItemText" >{item.name} </span>
+          <label for={item.id} className="inventoryItemText KaiserText TextInput">{item.totalAmount}</label>
+        </>
+      }
 
       horizontal
     >
-      <TextInput
-        id={item.id}
-        placeholder="0"
-      />
+      <Col
+        m={3}
+        s={12}>
+        <TextInput
+          id={item.id}
+          placeholder="0"
+          className="TextInput"
+        />
+      </Col>
     </Card>
 
 

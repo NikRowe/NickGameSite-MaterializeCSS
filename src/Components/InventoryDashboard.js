@@ -36,6 +36,7 @@ class InventoryDashboard extends Component {
       document.getElementById(itemId).value = "";
     }
 
+  //THE BELOW WAS MY 1ST ATTEMPT AT THE LOGIC FOR INC/DEC THEN REVISED WITH FRANK ABOVE. 
     // let inputVal = document.getElementById(itemId).value
     // if (isNaN(inputVal) || inputVal === "" || inputVal === null) { return; }
     // else {
@@ -57,7 +58,7 @@ class InventoryDashboard extends Component {
       <div>
           <div className="row">
             <div className="col">
-              <h2>Card Display</h2>
+              <h2>Items Inventory</h2>
               <hr />
             </div>
           </div>
