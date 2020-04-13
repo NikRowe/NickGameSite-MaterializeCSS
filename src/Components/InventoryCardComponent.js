@@ -6,6 +6,7 @@ import {
   Icon,
   CardTitle,
   Button,
+  TextInput
 } from 'react-materialize';
 
 // import {
@@ -25,33 +26,40 @@ const InventoryCard = ({ item, updateInventoryItemValue }) => {
       className="KaiserText card small hoverable"
       actions={[
         <>
-        <Button
-          node="button"
-          style={{
-            marginRight: '5px'
-          }}
-          waves="light"
-        >
-          Add Item
+          <Button
+            node="button"
+            style={{
+              marginRight: '5px'
+            }}
+            waves="light"
+            onClick={updateInventoryItemValue(item.id, "increment")}
+          >
+            Add Item
           <Icon left>
-            add_box
+              add
           </Icon>
-        </Button>
-        <Button
-          node="button"
-          waves="light"
-        >
-          Remove Item
+          </Button>
+          <Button
+            node="button"
+            waves="light"
+            onClick={updateInventoryItemValue(item.id, "decrement")}
+          >
+            Remove Item
           <Icon left>
-            remove
+              remove
           </Icon>
-        </Button>
+          </Button>
         </>
       ]}
       header={<CardTitle image={item.image} />}
       title={<span >{item.name} {item.totalAmount}</span>}
+
       horizontal
     >
+      <TextInput
+        id={item.id}
+        placeholder="0"
+      />
     </Card>
 
 
