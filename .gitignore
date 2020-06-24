@@ -4,5 +4,6 @@ materialize.css
 materialize.min.css
 materialize.js
 materialize.min.js
+build
 # Local Netlify folder
 .netlify

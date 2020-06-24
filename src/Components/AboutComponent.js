@@ -1,12 +1,8 @@
 import React from "react";
 import {
-  Row,
-  Col,
   Card,
   Icon,
   CardTitle,
-  Button,
-  TextInput
 } from 'react-materialize';
 
 const About = () => (
