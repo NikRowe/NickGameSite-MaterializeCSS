@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import InventoryCard from './InventoryCardComponent';
 import { INVENTORY } from "../Data/inventory";
 
@@ -27,8 +27,14 @@ class InventoryDashboard extends Component {
           } else {
             inventoryItem.totalAmount -= inputVal;
           }
+          if (inventoryItem.totalAmount < 0) {
+            inventoryItem.totalAmount += inputVal
+          }
         }
+        
+        console.log("totalAmount", inventoryItem.totalAmount)
         return inventoryItem;
+
       });
       this.setState({
         inventory: updatedInventory
@@ -36,7 +42,7 @@ class InventoryDashboard extends Component {
       document.getElementById(itemId).value = "";
     }
 
-  //THE BELOW WAS MY 1ST ATTEMPT AT THE LOGIC FOR INC/DEC THEN REVISED WITH FRANK ABOVE. 
+    //THE BELOW WAS MY 1ST ATTEMPT AT THE LOGIC FOR INC/DEC THEN REVISED WITH FRANK ABOVE. 
     // let inputVal = document.getElementById(itemId).value
     // if (isNaN(inputVal) || inputVal === "" || inputVal === null) { return; }
     // else {
@@ -56,23 +62,23 @@ class InventoryDashboard extends Component {
   render() {
     return (
       <div>
-          <div className="row">
-            <div className="col">
-              <h2>Items Inventory</h2>
-              <hr />
-            </div>
-          </div>
-          <div className="row">
-            {this.state.inventory.map(item => (
-              <div key={item.id} className="col-md-4 m-1">
-                <InventoryCard
-                  item={item}
-                  updateInventoryItemValue={this.updateInventoryItemValue}
-                />
-              </div>
-            ))}
+        <div className="row">
+          <div className="col">
+            <h2>Items Inventory</h2>
+            <hr />
           </div>
         </div>
+        <div className="row">
+          {this.state.inventory.map(item => (
+            <div key={item.id} className="col-md-4 m-1">
+              <InventoryCard
+                item={item}
+                updateInventoryItemValue={this.updateInventoryItemValue}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
     );
   }
 }
