@@ -28,7 +28,8 @@ class InventoryDashboard extends Component {
             inventoryItem.totalAmount -= inputVal;
           }
           if (inventoryItem.totalAmount < 0) {
-            inventoryItem.totalAmount += inputVal
+            alert(`You will go negative by ${inventoryItem.totalAmount} units if you use this many.`)
+            inventoryItem.totalAmount += inputVal;
           }
         }
         
