@@ -1,15 +1,11 @@
-:root {
-    --KaiserBlue: #0078a9;
-}
-
 html {
-    background-color: #401164;
+    background-color: #561786;
     font-family: Helvetica;
 }
 
 .container {
     max-width: 95%;
-    width: 85%
+    width: 85%;
 }
 
 /* NAVBAR */
@@ -61,9 +57,40 @@ nav .sidenav-trigger {
     margin-bottom: -1rem;
 }
 
-.footer-links {
-    font-size: .8rem;
+/* MAIN CONTENT */
+.promotion-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #401164;
 }
+.promotion-img {
+    
+}
+
+
+/* FOOTER */
 .page-footer {
-    padding: 5rem
+    padding-top:5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    background-color: #401164;
+    color: rgba(255, 255, 255, .65)
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-top: -4rem;
+}
+.footer-social {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+.footer-text {
+    color: rgba(255, 255, 255, .65)
+}
+.copywright {
+    text-align: center;
 }

@@ -19,7 +19,7 @@ import {
 //   Label
 // } from "reactstrap";
 
-const InventoryCard = ({ item, updateInventoryItemValue }) => {
+const GameCard = ({ item }) => {
   return (
     <Card
       className="KaiserText card small hoverable"
@@ -32,7 +32,6 @@ const InventoryCard = ({ item, updateInventoryItemValue }) => {
             }}
             waves="light"
             className="KaiserBg btnH"
-            onClick={updateInventoryItemValue(item.id, "increment")}
           >
             Add Item
           <Icon left>
@@ -43,7 +42,6 @@ const InventoryCard = ({ item, updateInventoryItemValue }) => {
             node="button"
             waves="light"
             className="KaiserBg btnH"
-            onClick={updateInventoryItemValue(item.id, "decrement")}
           >
             Remove Item
           <Icon left>
@@ -72,43 +70,7 @@ const InventoryCard = ({ item, updateInventoryItemValue }) => {
         />
       </Col>
     </Card>
-
-
-    // <Card>
-    //   <CardImg src ={item.image} alt="img here" width="10%"/>
-    //   <CardBody>
-    //     <CardTitle>
-    //       <div className="row">
-    //         <Label htmlFor={item.id} className="col-sm-10 col-md-9 KaiserText inventoryItemText">{item.name}</Label>
-    //         {"  "}
-    //         <span className="col KaiserText inventoryItemText">{item.totalAmount}</span>
-    //       </div>
-    //     </CardTitle>
-    //     <CardText>
-    //       <span className="row">
-    //         <Input
-    //           type="number"
-    //           id={item.id}
-    //           name={item.id}
-    //           className="col-5"
-    //         />
-    //       </span>
-    //       <Button
-    //         className="KaiserBg"
-    //         onClick={updateInventoryItemValue(item.id, "increment")}
-    //       >
-    //         Add
-    //       </Button>{" "}
-    //       <Button
-    //         className="KaiserBg"
-    //         onClick={updateInventoryItemValue(item.id, "decrement")}
-    //       >
-    //         Remove
-    //       </Button>
-    //     </CardText>
-    //   </CardBody>
-    // </Card>
   );
 };
 
-export default InventoryCard;
+export default GameCard;
