@@ -44,7 +44,7 @@ class Navbar extends Component {
                 {/* Sidenav Display */}
                 <ul className="sidenav" id="Main-Menu">
                     <li><Link to="/" className="white-text ">HOME</Link></li>
-                    <li><Link to="/" className="white-text">SHOWS<i class="material-icons right white-text">keyboard_arrow_right</i></Link></li>
+                    <li><Link to="/" className="white-text">SHOWS<i className="material-icons right white-text">keyboard_arrow_right</i></Link></li>
                     <li><Link to="/" className="white-text">GAMES</Link></li>
                     <li><Link to="/" className="white-text">APPS</Link></li>
                     <li><Link to="/" className="white-text">TV SCHEDULE</Link></li>

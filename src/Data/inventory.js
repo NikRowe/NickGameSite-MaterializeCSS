@@ -1,24 +1,28 @@
 export const INVENTORY = [
     {
       id: 0,
-      name: "Masks",
-      totalAmount: 10,
-      image: "/img/MaskBlue.png",
-      featured: true
+      name: "SUPER BRAWL",
+      image: "https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:a6ea8abf-bb93-4558-a6fa-f5402363de31?quality=0.7",
     },
     {
       id: 1,
-      name: "Gloves",
-      totalAmount: 0,
-      image: "img/Gloves.png",
-      featured: false
+      name: "SPONGEBOB MOVES IN",
+      image: "https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:c38f2528-d9f6-4994-99fb-847f0d9090aa?quality=0.7",
     },
     {
-      id: 2,
-      name: "Sanitizer",
-      totalAmount: 20,
-      image: "img/SanitizerBlue.png",
-      featured: false
+      id: 3,
+      name: "TMNT PORTAL POWER",
+      image: "https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:5f8b2c43-c893-4c70-bce3-1641a2a1af2a?quality=0.7",
+    },
+    {
+      id: 4,
+      name: "HENRY DANGER CRIME WARP",
+      image: "https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:f5af1df2-e8d3-4be7-b3a4-01adaca7b78c?quality=0.7",
+    },
+    {
+      id: 5,
+      name: "NICKELODEION SCREENS UP",
+      image: "https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:e5a2e63c-6fe4-4726-9534-9df0ebafe831?quality=0.7",
     }
   ];
   

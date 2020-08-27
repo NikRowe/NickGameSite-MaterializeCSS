@@ -81,8 +81,38 @@ nav .sidenav-trigger {
     text-align: center;
     margin-top: 8rem;
     color: #87E1ED;
-    font-weight: 800;
     font-family: "Mega";
+}
+.card {
+    text-align: center;
+    color: white;
+}
+.card-image{
+    background-color: #612490;
+    padding: 3rem;
+}
+.card .card-image img {
+    border-radius: 40px;
+}
+.card .card-image .card-title {
+    position: relative;
+    padding: 0;
+}
+.card .card-title {
+    font-size: 1rem;
+    font-weight: 900;
+}
+.card .card-content {
+    padding: 1rem;
+    background-color: #401164;
+}
+.advertisement-bar {
+    position: absolute;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    bottom: 0;
 }
 
 /* FOOTER */
