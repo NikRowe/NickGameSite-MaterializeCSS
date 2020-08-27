@@ -39,23 +39,21 @@ nav {
 
 /* SCROLLABLE NAVBAR */
 .navScrolled {
-    position: fixed;
     width: 100%;
     padding: 1rem;
-    margin-top: -1.5rem;
-    background-color: green;
     z-index: 5000;
+    padding-top: .01rem;
 }
-.valign-wrapper {
-    margin-top: 2.5rem;
-    margin-left: 2rem
+.scrolledNavContent {
+    margin-top: -.2rem
 }
+
 
 /* HAMBURGER */
 nav i.material-icons {
     font-size: 2rem;
 }
-nav .sidenav-trigger {
+#topNavTrigger {
     padding-top: 1.5rem;
     margin-left: -18px;
 }
