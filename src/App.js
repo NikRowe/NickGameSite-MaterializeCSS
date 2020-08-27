@@ -11,13 +11,11 @@ const App = () => (
     <header>
       <Navbar />
     </header>
-    <div className="container">
       <main>
         <Switch>
           <Route exact path="/" component={Landing} />
         </Switch>
       </main>
-    </div>
     <footer>
       <MyFooter />
     </footer>

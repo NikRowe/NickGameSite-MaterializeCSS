@@ -18,11 +18,11 @@ class Navbar extends Component {
         return (
             <>
                 <nav>
-                    <div className="nav-wrapper white ">
+                    <div className="nav-wrapper white">
                         {/* Logo*/}
                         <div className="logo">
                             <Link to="/" className="brand-logo center">
-                                <img src="https://nick.mtvnimages.com/nick-assets/common/nick-logo-200x200.png" height="120rem" alt="Nickalodeon Logo" />
+                                <img src="https://nick.mtvnimages.com/nick-assets/common/nick-logo-200x200.png" height="120rem" alt="Nickalodeon Logo" className="logo-img"/>
                             </Link>
                         </div>
                         {/* Sidenav toggle */}

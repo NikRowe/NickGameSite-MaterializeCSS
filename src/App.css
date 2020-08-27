@@ -59,15 +59,31 @@ nav .sidenav-trigger {
 
 /* MAIN CONTENT */
 .promotion-wrapper {
+    padding: 1rem;
+    background-color: #401164;
     display: flex;
     justify-content: center;
-    padding: 2rem;
-    background-color: #401164;
+    padding-bottom: 25rem;
 }
 .promotion-img {
-    
+    background-image: url("https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:63d7dfba-35dd-48e5-b7cf-36c9c818cc2d?quality=0.7&width=1600&height=900&crop=true");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+    background-color: #561786;
+    border-radius: 5px;
+    width: 85%;
+    height: 30rem;
+    position: absolute;
+    z-index: 10;
 }
-
+.content-title {
+    text-align: center;
+    margin-top: 8rem;
+    color: #87E1ED;
+    font-weight: 800;
+    font-family: "Mega";
+}
 
 /* FOOTER */
 .page-footer {
@@ -93,4 +109,31 @@ nav .sidenav-trigger {
 }
 .copywright {
     text-align: center;
+}
+
+/* MOBILE RESPONSIVENESS */
+/* PROMOTIONAL IMAGE */
+@media screen and (max-width: 660px) {
+    .promotion-img {
+        background-image: url("https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:63d7dfba-35dd-48e5-b7cf-36c9c818cc2d?quality=0.7&width=660&height=371&crop=true");
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+/* NAVBAR */
+@media screen and (max-width: 660px) {
+    nav{
+        padding: .75rem;
+    }
+    nav .sidenav-trigger {
+        padding-top: .75rem;
+        margin-left: 0px;
+    }
+    .logo {
+        margin-top: -1.5rem;
+    }
+    .logo-img {
+        height: 5rem;
+    }
 }
