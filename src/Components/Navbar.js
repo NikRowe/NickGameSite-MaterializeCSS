@@ -8,7 +8,7 @@ class Navbar extends Component {
     componentDidMount() {
         const sideNav = document.querySelectorAll('.sidenav');
         const options = {
-            edge: 'right'
+            edge: 'left'
         }
         M.Sidenav.init(sideNav, options);
     }
@@ -16,34 +16,41 @@ class Navbar extends Component {
     render() {
 
         return (
-            <div>
-                <nav className="white ">
-                    <div className="nav-wrapper ">
-                        {/* Full Words Logo */}
-                        <a href="/" className="brand-logo center hide-on-med-and-down KaiserText "><span className="KaiserText "> Nick </span></a>
+            <>
+                <nav>
+                    <div className="nav-wrapper white ">
+                        {/* Logo*/}
+                        <div className="logo">
+                            <Link to="/" className="brand-logo center">
+                                <img src="https://nick.mtvnimages.com/nick-assets/common/nick-logo-200x200.png" height="120rem" alt="Nickalodeon Logo" />
+                            </Link>
+                        </div>
                         {/* Sidenav toggle */}
-                        <a href="!#" data-target="Main-Menu" className="KaiserText sidenav-trigger right show-on-medium-and-up">
+                        <a href="!#" data-target="Main-Menu" className="sidenav-trigger black-text show-on-medium-and-up">
                             <i className="material-icons">menu</i>
                         </a>
-                        {/* Logo Img jumps to center on <= Tablet */}
-                        <ul className="brand-logo hide-on-small-only">
-                            <li><Link to="/"><img src="img/NavLogo.png" height="60" className="p1-pt3" alt="Kaiser-NavLog"/></Link></li>
-                        </ul>
-                        {/* Logo Img resizes for Mobile */}
-                        <ul className="brand-logo center hide-on-med-and-up">
-                            <li><Link to="/"><img src="img/NavLogo.png" height="50" className="p1-pt3" alt="Kaiser-NavLog"/></Link></li>
-                        </ul>
                     </div>
-                    {/* Sidenav Display */}
-                    <div className="right">
-                        <ul className="sidenav right" id="Main-Menu">
-                            <li><Link to="/"><i className=" material-icons left">view_list</i>Items</Link></li>
-                            <li><Link to="/about"><i className="material-icons left">info</i>About</Link></li>
-                            <li><Link to="/covid-guide"><i className="material-icons left">help</i>Quick Guide</Link></li>
+                    <div className="nav-content brand-logo center" id="nav-content">
+                        <ul className=" hide-on-med-and-down">
+                            <li><Link to="/" className="black-text nav-item">SHOWS</Link></li>
+                            <li><Link to="/" className="black-text nav-item active">GAMES</Link></li>
+                            <li><Link to="/" className="black-text nav-item">APPS</Link></li>
+                            <li><Link to="/" className="black-text nav-item">TV SCHEDULE</Link></li>
+                            <li><Link to="/" className="black-text nav-item">PRIVACY POLICY</Link></li>
                         </ul>
                     </div>
                 </nav>
-            </div>
+
+                {/* Sidenav Display */}
+                <ul className="sidenav" id="Main-Menu">
+                    <li><Link to="/" className="white-text ">HOME</Link></li>
+                    <li><Link to="/" className="white-text">SHOWS<i class="material-icons right white-text">keyboard_arrow_right</i></Link></li>
+                    <li><Link to="/" className="white-text">GAMES</Link></li>
+                    <li><Link to="/" className="white-text">APPS</Link></li>
+                    <li><Link to="/" className="white-text">TV SCHEDULE</Link></li>
+                    <li><Link to="/" className="white-text">PRIVACY POLICY</Link></li>
+                </ul>
+            </>
         )
     }
 }

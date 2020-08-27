@@ -1,61 +1,69 @@
 :root {
-    --KaiserBlue: #0078A9;
+    --KaiserBlue: #0078a9;
 }
 
-html{
-    background-color: var(--KaiserBlue);
+html {
+    background-color: #401164;
     font-family: Helvetica;
 }
 
-.p1-pt3 {
-    padding: .1rem;
-    padding-top: .3rem;
+.container {
+    max-width: 95%;
+    width: 85%
 }
 
-.KaiserBg {
-    background-color: var(--KaiserBlue);
-}
-
-.KaiserText {
-    color: var(--KaiserBlue);
-}
-
-.main {
-    color: white;
-}
-
-/* Button:hover {
+/* NAVBAR */
+nav {
+    padding: 5rem;
     background-color: white;
-    color: var(--KaiserBlue);
-    border: solid, 5px, var(--KaiserBlue);
-
-} */
-
-.inventoryItemText {
-    font-weight: bold;
-    font-size: xx-large;
+}
+.logo {
+    margin-top: -5rem;
 }
 
-.btnH {
-    
-    border: solid 2px var(--KaiserBlue);
+/* NAV LINKS */
+.nav-wrapper {
+    margin-bottom: 0.6rem;
+}
+.nav-content {
+    margin-top: 5rem;
+}
+.nav-item {
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding-right: 2rem;
+}
+.nav-item:hover {
+    background-color: transparent;
+    border-bottom: 3px solid black;
+}
+.active {
+    border-bottom: 3px solid black;
 }
 
-.btnH:hover {
-    color: var(--KaiserBlue);
-    background-color: white;
-    border: solid 2px var(--KaiserBlue);
+/* HAMBURGER */
+nav i.material-icons {
+    font-size: 2rem;
+}
+nav .sidenav-trigger {
+    padding-top: 1.5rem;
+    margin-left: -18px;
 }
 
-.TextInput:focus {
-    background-color: var(--KaiserBlue)
+/* SIDE NAV */
+.sidenav {
+    background-color: #401164;
+    padding: 2rem;
+}
+.sidenav li > a {
+    font-size: 0.8rem;
+    font-weight: 700;
+    margin-bottom: -1rem;
 }
 
-.center {
-    display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+.footer-links {
+    font-size: .8rem;
+}
+.page-footer {
+    padding: 5rem
 }

@@ -1,11 +1,9 @@
 {
   "name": "react",
   "version": "1.0.0",
-  "description": "Kaiser Inventory App",
+  "description": "NickGameSite",
   "keywords": [
-    "react",
-    "Kaiser",
-    "Kaiser Permanente"
+    "react"
   ],
   "main": "src/index.js",
   "dependencies": {

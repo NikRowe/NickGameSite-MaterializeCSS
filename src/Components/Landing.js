@@ -4,7 +4,7 @@ import { INVENTORY } from "../Data/inventory";
 
 
 
-class InventoryDashboard extends Component {
+class Landing extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -84,5 +84,5 @@ class InventoryDashboard extends Component {
   }
 }
 
-export default InventoryDashboard;
+export default Landing;
 
