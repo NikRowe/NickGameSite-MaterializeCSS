@@ -46,6 +46,14 @@ export const INVENTORY = [
       apple: true,
       google: false,
       amazon: false,
+    },
+    {
+      id: 7,
+      name: "SKY WHALE",
+      image: "https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:0b282679-9d29-4ae7-ac59-a8ab31e133fd?quality=0.7",
+      apple: true,
+      google: true,
+      amazon: true,
     }
   ];
   

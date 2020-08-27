@@ -37,6 +37,20 @@ nav {
     border-bottom: 3px solid black;
 }
 
+/* SCROLLABLE NAVBAR */
+.navScrolled {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    margin-top: -1.5rem;
+    background-color: green;
+    z-index: 5000;
+}
+.valign-wrapper {
+    margin-top: 2.5rem;
+    margin-left: 2rem
+}
+
 /* HAMBURGER */
 nav i.material-icons {
     font-size: 2rem;
@@ -58,12 +72,13 @@ nav .sidenav-trigger {
 }
 
 /* MAIN CONTENT */
+/* PROMOTION IMG */
 .promotion-wrapper {
     padding: 1rem;
     background-color: #401164;
     display: flex;
     justify-content: center;
-    padding-bottom: 25rem;
+    padding-bottom: 30rem;
 }
 .promotion-img {
     background-image: url("https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:63d7dfba-35dd-48e5-b7cf-36c9c818cc2d?quality=0.7&width=1600&height=900&crop=true");
@@ -73,23 +88,32 @@ nav .sidenav-trigger {
     background-color: #561786;
     border-radius: 5px;
     width: 85%;
-    height: 30rem;
+    height: 35rem;
     position: absolute;
     z-index: 10;
+    margin-top: 2rem;
+}
+.promotion-content {
+    width: 25rem;
+    margin-left: 2rem;
+    margin-top: 15rem;
+    color: white;
 }
 .content-title {
     text-align: center;
     margin-top: 8rem;
-    color: #87E1ED;
+    color: #87e1ed;
     font-family: "Mega";
 }
+
+/* GAME CARDS */
 .card {
     text-align: center;
     color: white;
     height: 43rem;
     background-color: #401164;
 }
-.card-image{
+.card-image {
     background-color: #612490;
     padding: 3rem;
 }
@@ -119,11 +143,11 @@ nav .sidenav-trigger {
 
 /* FOOTER */
 .page-footer {
-    padding-top:5rem;
+    padding-top: 5rem;
     padding-bottom: 0;
     margin-bottom: 0;
     background-color: #401164;
-    color: rgba(255, 255, 255, .65)
+    color: rgba(255, 255, 255, 0.65);
 }
 .footer-links {
     display: flex;
@@ -137,7 +161,7 @@ nav .sidenav-trigger {
     font-size: 2rem;
 }
 .footer-text {
-    color: rgba(255, 255, 255, .65)
+    color: rgba(255, 255, 255, 0.65);
 }
 .copywright {
     text-align: center;
@@ -155,11 +179,11 @@ nav .sidenav-trigger {
 
 /* NAVBAR */
 @media screen and (max-width: 660px) {
-    nav{
-        padding: .75rem;
+    nav {
+        padding: 0.75rem;
     }
     nav .sidenav-trigger {
-        padding-top: .75rem;
+        padding-top: 0.75rem;
         margin-left: 0px;
     }
     .logo {

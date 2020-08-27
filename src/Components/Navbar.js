@@ -14,15 +14,21 @@ class Navbar extends Component {
     }
 
     render() {
-
         return (
             <>
-                <nav>
-                    <div className="nav-wrapper white">
+                <nav id="navScrolled" className="navScrolled hide">
+                    <div className="valign-wrapper">
+                        <Link to="/" className="brand-logo">
+                            <img src="https://nick.mtvnimages.com/nick-assets/common/nick-logo-200x200.png" height="60rem" alt="Nickalodeon Logo" className="logo-img" />
+                        </Link>
+                    </div>
+                </nav>
+                <nav id='navbar'>
+                    <div className="nav-wrapper">
                         {/* Logo*/}
                         <div className="logo">
                             <Link to="/" className="brand-logo center">
-                                <img src="https://nick.mtvnimages.com/nick-assets/common/nick-logo-200x200.png" height="120rem" alt="Nickalodeon Logo" className="logo-img"/>
+                                <img src="https://nick.mtvnimages.com/nick-assets/common/nick-logo-200x200.png" height="120rem" alt="Nickalodeon Logo" className="logo-img" />
                             </Link>
                         </div>
                         {/* Sidenav toggle */}
@@ -32,7 +38,7 @@ class Navbar extends Component {
                     </div>
                     <div className="nav-content brand-logo center" id="nav-content">
                         <ul className=" hide-on-med-and-down">
-                            <li><Link to="/" className="black-text nav-item">SHOWS</Link></li>
+                            <li><Link to="/" className="black-text nav-item" id="showsLink">SHOWS</Link></li>
                             <li><Link to="/" className="black-text nav-item active">GAMES</Link></li>
                             <li><Link to="/" className="black-text nav-item">APPS</Link></li>
                             <li><Link to="/" className="black-text nav-item">TV SCHEDULE</Link></li>
