@@ -9,14 +9,18 @@ import "./App.css";
 
 class App extends Component {
 
+  // LISTENS FOR SCROLL ON PAGE AND THEN DISPLAYS THE CORRECT NAVBAR //
   componentDidMount() {
     window.addEventListener('scroll', () => {
       const isTop = window.scrollY > 100
       const nav = document.getElementById('navbar')
       const navScrolled = document.getElementById('navScrolled')
+      const popOver = document.getElementById('popOver')
       if (isTop) {
         nav.classList.add('hide')
         navScrolled.classList.remove('hide')
+        popOver.classList.add('popOverScrolled')
+        popOver.classList.remove('popOver')
       } else {
         nav.classList.remove('hide')
         navScrolled.classList.add('hide')

@@ -69,6 +69,37 @@ nav i.material-icons {
     margin-bottom: -1rem;
 }
 
+/* POPOVER */
+.popOver{
+    background-color: #612490;
+    border: 2px solid orange;
+    width: 25rem;
+    padding: 2rem;
+    margin-left: 12rem;
+    margin-top: -6rem;
+    position: fixed;
+    z-index: 5000;
+}
+.popOverItem {
+    margin-bottom:2rem;
+    color: white;
+}
+.popOverItem:hover {
+    color: #87E1ED
+}
+.popOverBtn {
+    margin-left: 5rem;
+}
+.popOverScrolled {
+    background-color: #612490;
+    border: 2px solid orange;
+    width: 25rem;
+    padding: 2rem;
+    margin-left: 12rem;
+    position: fixed;
+    z-index: 5000;
+}
+
 /* MAIN CONTENT */
 /* PROMOTION IMG */
 .promotion-wrapper {
@@ -172,6 +203,7 @@ nav i.material-icons {
         background-image: url("https://nick.mtvnimages.com/uri/mgid:arc:content:nick.com:63d7dfba-35dd-48e5-b7cf-36c9c818cc2d?quality=0.7&width=660&height=371&crop=true");
         background-size: cover;
         background-position: center center;
+        height: 29rem;
     }
 }
 
