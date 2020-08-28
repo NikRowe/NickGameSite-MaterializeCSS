@@ -76,7 +76,7 @@ nav i.material-icons {
     width: 25rem;
     padding: 2rem;
     margin-left: 12rem;
-    margin-top: -6rem;
+    margin-top: -10rem;
     position: fixed;
     z-index: 5000;
 }
@@ -211,7 +211,6 @@ nav i.material-icons {
 @media screen and (max-width: 660px) {
     nav {
         padding: 0.75rem;
-        position: fixed;
         top: 0;
         z-index: 500;
         width: 100%;
