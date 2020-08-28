@@ -1,7 +1,6 @@
-import React, { Component, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import M from 'materialize-css'
 import { Link } from 'react-router-dom';
-import Popover from '@material-ui/core/Popover'
 
 
 const Navbar = () => {
