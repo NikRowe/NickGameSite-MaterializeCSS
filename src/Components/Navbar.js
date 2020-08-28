@@ -55,8 +55,7 @@ const Navbar = () => {
             <nav id='navbar'>
                 <div className="nav-wrapper">
                     {/* Logo*/}
-                    <div className="logo" onMouseEnter={handlePopoverOpen}
-                        onMouseLeave={handlePopoverClose}>
+                    <div className="logo">
                         <Link to="/" className="brand-logo center">
                             <img src="https://nick.mtvnimages.com/nick-assets/common/nick-logo-200x200.png" height="120rem" alt="Nickalodeon Logo" className="logo-img" />
                         </Link>
